@@ -1,5 +1,6 @@
 {
     "name": "confrariaweb/laravel-notification",
+    "version": "dev-master",
     "description": "Laravel notification package",
     "keywords": [
         "notification",
