@@ -15,7 +15,9 @@ class NotificationServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        $this->loadRoutesFrom(__DIR__ . '/../Routes/web.php');
         $this->loadViewsFrom(__DIR__ . '/../Views', 'notification');
+
         Blade::component('notification::components.notifications', 'notifications');
     }
 
