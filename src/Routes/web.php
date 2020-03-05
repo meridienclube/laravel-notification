@@ -10,10 +10,7 @@ Route::prefix('admin')
             ->name('notifications.')
             ->group(function () {
 
-                Route::get('{id}/markAsRead', function () {
-                    return true;
-                })
-                    ->name('markasread');
+                Route::get('{id}/markAsRead', 'NotificationController@markAsRead')->name('markasread');
 
             });
     });
